@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page - Idola Saya</title>
+    
+    <style>
+        /* Reset CSS dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, sans-serif;
+        }
+
+        body {
+            background-color: #121212; /* Tema gelap */
+            color: #e0e0e0; /* Teks berwarna abu-abu terang agar tidak menyilaukan */
+            line-height: 1.6;
+        }
+
+        /* Styling Bagian Hero/Header Utama */
+        header {
+            background: linear-gradient(135deg, #1e1e1e 0%, #000000 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 3px solid #ff4757; /* Aksen warna merah/pink */
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #ff4757;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255, 71, 87, 0.4); /* Efek glowing/cahaya */
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05); /* Efek membesar saat di-hover */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #a4b0be;
+            font-style: italic;
+        }
+
+        /* Container utama untuk konten */
+        .container {
+            max-width: 900px;
+            margin: -30px auto 40px auto; /* Margin negatif agar sedikit naik ke header */
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Styling setiap bagian (section) */
+        section {
+            background-color: #1e272e;
+            margin-bottom: 25px;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+            border-left: 5px solid #ff4757;
+        }
+
+        section h2 {
+            color: #ff4757;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            display: inline-block;
+            border-bottom: 2px solid rgba(255, 71, 87, 0.3);
+            padding-bottom: 5px;
+        }
+
+        /* Styling List untuk Karya/Penghargaan */
+        .karya-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .karya-item {
+            background-color: #2f3640;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 3px solid #ffa502;
+        }
+
+        .karya-item h3 {
+            color: #ffa502;
+            margin-bottom: 5px;
+        }
+
+        /* Styling kutipan inspiratif */
+        blockquote {
+            background-color: #2f3640;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-style: italic;
+            text-align: center;
+            border-left: none;
+            border-top: 4px solid #ff4757;
+            border-bottom: 4px solid #ff4757;
+            margin: 20px 0;
+        }
+
+        /* Styling Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #000;
+            color: #747d8c;
+            margin-top: 40px;
+            border-top: 1px solid #2f3640;
+        }
+
+        footer a {
+            color: #ff4757;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Profil Utama -->
+    <header>
+        <!-- Ganti link ini dengan foto idolamu -->
+        <img src="michaelson.jpeg" alt="Foto Idola" class="profile-img">
+        <h1>[Michael Jaksel]</h1>
+        <p>Musisi | Aktor | Inspirasi Jutaan Orang</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Bagian Biografi -->
+        <section id="biografi">
+            <h2>Biografi Singkat</h2>
+            <p>[Michael Jaksel] adalah seorang tokoh yang sangat luar biasa di industri hiburan. Lahir pada [17 Agustus 1945], ia memulai karirnya dari nol hingga berhasil mencapai puncak kesuksesan. Dedikasinya terhadap karya-karyanya selalu berhasil memukau para penggemar di seluruh dunia.</p>
+            <br>
+            <p>Selain bakatnya yang luar biasa, kepribadiannya yang rendah hati dan selalu peduli pada isu-isu sosial membuatnya menjadi panutan bagi banyak generasi muda.</p>
+        </section>
+
+        <!-- Bagian Karya & Penghargaan (Bisa disesuaikan: Album, Film, Medali, dll) -->
+        <section id="karya">
+            <h2>Karya & Penghargaan Terbaik</h2>
+            <div class="karya-list">
+                <div class="karya-item">
+                    <h3>Album / Karya 1 (Tahun)</h3>
+                    <p>Mendapatkan penghargaan tingkat internasional dan terjual jutaan kopi di seluruh dunia.</p>
+                </div>
+                <div class="karya-item">
+                    <h3>Penghargaan / Pencapaian 2 (Tahun)</h3>
+                    <p>Memenangkan kategori "Best Artist" pada ajang penghargaan bergengsi.</p>
+                </div>
+                <div class="karya-item">
+                    <h3>Proyek Amal (Tahun)</h3>
+                    <p>Mendirikan yayasan untuk membantu pendidikan anak-anak di daerah terpencil.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Alasan Mengidolakan -->
+        <section id="alasan">
+            <h2>Mengapa Saya Mengidolakannya?</h2>
+            <p>Bagi saya, [Michael Jaksel] bukan sekadar penghibur. Kerja kerasnya mengajarkan saya bahwa mimpi sebesar apa pun bisa dicapai jika kita tidak pernah menyerah. Ia membuktikan bahwa kesuksesan harus diimbangi dengan kebaikan hati.</p>
+            
+            <blockquote>
+                "cape jadi diri sendiri, jadi mantu mamamu boleh??."
+                <br><br>- [Michael Jaksel]
+            </blockquote>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Didedikasikan untuk [Michael Jaksel]. &copy; 2026 Dibuat oleh [Aditt] untuk Tugas Informatika.</p>
+        <p>Proyek di-host di <a href="https://github.com" target="_blank">GitHub Pages</a>.</p>
+    </footer>
+
+</body>
+</html>
