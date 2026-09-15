@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musik - Daniel Caesar</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="app-container">
+        <nav class="nav-menu">
+            <a class="nav-btn" href="../index.html">Profil</a>
+            <a class="nav-btn" href="biografi.html">Tentang Saya</a>
+            <a class="nav-btn" href="karya.html">Diskografi</a>
+            <a class="nav-btn" href="galeri.html">Galeri Momen</a>
+            <a class="nav-btn special active" href="musik.html">▶ Musik</a>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Ganti Tema">☀️</button>
+        </nav>
+
+        <main class="glass-panel">
+            <section class="tab-content active">
+                <h2 class="section-title">Putar Musiknya</h2>
+                <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                    <p style="margin-bottom: 20px; font-size: 1.1rem;"><strong>Daniel Caesar feat. H.E.R - Best Part</strong></p>
+                    <div style="width: 100%; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid var(--glass-border); background: #000; line-height: 0;">
+                        <video controls style="width: 100%; max-height: 400px; border: none; outline: none;">
+                            <source src="../assets/vid/H.E.R. - Best Part (Lyrics) Ft. Daniel Caesar - Unique Sound (720p, h264).mp4" type="video/mp4">
+                            Maaf, browser kamu tidak mendukung pemutar video.
+                        </video>
+                    </div>
+                    <p style="margin-top: 15px; color: var(--text-muted);">Tekan tombol Play di atas untuk memutar video.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
